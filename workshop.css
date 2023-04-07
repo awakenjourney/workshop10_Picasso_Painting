@@ -1,0 +1,102 @@
+
+/* html, body {
+    max-width: 1200px;
+    margin: auto;
+} */
+
+.header {
+    display: grid;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 40px;
+    background-color: #cdeaef;
+}
+
+.content-wrapper > .left {
+    background-color: yellow;
+    height: 5em;
+}
+
+.content-wrapper > .middle {
+    background-color: red;
+    height: 5em;
+}
+
+.content-wrapper > .right {
+    background-color: green;
+    height: 5em;
+}
+
+.content-wrapper > #content-padding {
+    padding: 15px;
+    text-align: center;
+}
+
+.grid-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #cea124;
+
+}
+
+.grid-wrapper > .grid-tex-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.grid-wrapper > .grid-tex-box > .row1 {
+    background-color: blanchedalmond;
+    /* grid-row: 1/3; */
+}
+
+.grid-wrapper > .grid-tex-box > .row2 {
+    background-color: aquamarine;
+    /* grid-column: 2/3; */
+}
+
+.grid-wrapper > .grid-tex-box > .row3 {
+    background-color: pink;
+}
+
+#grid-row {
+    height: 3em;
+    width: 500px;
+    text-align: center;
+}
+
+.form {
+    justify-content: center;
+    text-align: center;
+    padding-top: 2%;
+}
+
+.form > .form-header h1 {
+    font-weight: 700px;
+}
+
+
+@media (max-width: 615px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    .image-fullstack img {
+        height: 70px;
+    }
+
+}
+
+
+
+
+
